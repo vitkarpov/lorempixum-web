@@ -1,1 +1,1 @@
-web: ./main
+web: lorempixum-web -port $PORT
