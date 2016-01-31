@@ -2,11 +2,13 @@
 
 This tiny web service returns images` stubs with the given sizes. In fact it provides http interface for [lorempixum](github.com/vitkarpov/lorempixum) package.
 
-Try it:
+Try it online:
 
 ```
 $ curl lorempixum.ru/jpeg/100/100 > foo.jpeg
 ```
+
+I use it to get images into static html markups during development
 
 ## HTTP API
 

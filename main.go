@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/gorilla/mux"
-	"github.com/vitkarpov/lorempixum"
+	"github.com/vitkarpov/lorempixum-web/Godeps/_workspace/src/github.com/gorilla/mux"
+	"github.com/vitkarpov/lorempixum-web/Godeps/_workspace/src/github.com/vitkarpov/lorempixum"
 	"log"
 	"net/http"
 	"strconv"
