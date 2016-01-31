@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/vitkarpov/lorempixum-web/Godeps/_workspace/src/github.com/gorilla/mux"
-	"github.com/vitkarpov/lorempixum-web/Godeps/_workspace/src/github.com/vitkarpov/lorempixum"
+	"github.com/gorilla/mux"
+	"github.com/vitkarpov/lorempixum"
 	"log"
 	"net/http"
+	"os"
 	"strconv"
 )
 
@@ -12,7 +13,7 @@ func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/{format}/{width}/{height}", handlerImage)
 	http.Handle("/", router)
-	log.Fatal(http.ListenAndServe(":8000", nil))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), nil))
 }
 
 func handlerImage(res http.ResponseWriter, req *http.Request) {
