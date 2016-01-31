@@ -10,14 +10,9 @@ import (
 
 func main() {
 	router := mux.NewRouter()
-	router.HandleFunc("/", handlerIndex)
 	router.HandleFunc("/{format}/{width}/{height}", handlerImage)
 	http.Handle("/", router)
 	log.Fatal(http.ListenAndServe(":8000", nil))
-}
-
-func handlerIndex(res http.ResponseWriter, req *http.Request) {
-	http.ServeContent(res, req, "static/index.html")
 }
 
 func handlerImage(res http.ResponseWriter, req *http.Request) {
