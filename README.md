@@ -1,6 +1,6 @@
 ## Lorepixum Web Service
 
-This tiny web service returns images` stubs with the given sizes. In fact it provides http interface for [lorempixum](github.com/vitkarpov/lorempixum) package.
+This tiny web service returns images` stubs with the given sizes. In fact it provides http interface for [lorempixum](https://github.com/vitkarpov/lorempixum) package.
 
 Try it online:
 
